@@ -7,7 +7,11 @@ public class Human {
     Human(String name, String city, int dateOfBirth, String jobTitle) {
         this.name = name;
         this.city = city;
-        this.dateOfBirth = dateOfBirth;
+        if( dateOfBirth>=0) {
+            this.dateOfBirth = dateOfBirth;
+        } else {
+            this.dateOfBirth=Math.abs(dateOfBirth);
+        }
         this.jobTitle = jobTitle;
 
     }
