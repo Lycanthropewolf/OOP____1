@@ -5,14 +5,26 @@ public class Human {
     String jobTitle;
 
     Human(String name, String city, int dateOfBirth, String jobTitle) {
-        this.name = name;
-        this.city = city;
-        if( dateOfBirth>=0) {
+        if (name == null) {
+            System.out.println(" Информация не указана");
+        } else {
+            this.name = name;
+        }
+        if (city == null) {
+            System.out.println(" Информация не указана");
+        } else {
+            this.city = city;
+        }
+        if (dateOfBirth >= 0) {
             this.dateOfBirth = dateOfBirth;
         } else {
-            this.dateOfBirth=Math.abs(dateOfBirth);
+            this.dateOfBirth = Math.abs(dateOfBirth);
         }
-        this.jobTitle = jobTitle;
+        if (jobTitle == null) {
+            System.out.println(" Информация не указана");
+        } else {
+            this.jobTitle = jobTitle;
+        }
 
     }
 
