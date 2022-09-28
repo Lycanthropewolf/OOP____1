@@ -13,5 +13,17 @@ public class Main {
         System.out.println(human3.toString());
         System.out.println(human4.toString());
         System.out.println(human5.toString());
+
+        Flover flover1= new Flover(" Роза обыкновенная", "", " Голландии", 35.59,0);
+        Flover flover2= new Flover(" Хризантема", " ", " ", 15.00,5);
+        Flover flover3= new Flover(" Пион", "", " Англии", 69.9,1);
+        Flover flover4= new Flover(" Гипсофила", "", " Турция", 19.5,10);
+        System.out.println(flover1.toString());
+        System.out.println(flover2.toString());
+        System.out.println(flover3.toString());
+        System.out.println(flover4.toString());
+
+
+
     }
 }
