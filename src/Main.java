@@ -31,7 +31,8 @@ public class Main {
         flovers[3] = flover4;
         /*sumFlovers(1, 0, 0, 0);
         isLifeSpam(0, 1, 0, 0);*/
-        buyerMessage(1, 5, 6, 0);
+        buyerMessage(1, 5, 6, 9);
+        buyerMessage(0,1,0,0);
     }
 
     /*(flovers[0].getCost() + flovers[1].getCost() + flovers[2].getCost() + flovers[3].getCost())*0.1;*/
@@ -48,13 +49,13 @@ public class Main {
             System.out.println(" срок годности букета " + flovers[2].getLifeSpam() + " день");
 
         } else if (pion <= 0 && roses > 0) {
-            System.out.println(" срок годности букета " + flovers[0].getLifeSpam() + " дня");
+            System.out.println(" срок годности букета " + flovers[0].getLifeSpam() + " дней");
 
         } else if (roses <= 0 && pion <= 0 && chrizantema > 0) {
-            System.out.println(" срок годности букета " + flovers[1].getLifeSpam() + " дня");
+            System.out.println(" срок годности букета " + flovers[1].getLifeSpam() + " дней");
 
         } else if (roses <= 0 && pion <= 0 && chrizantema <= 0 && gipsofila > 0) {
-            System.out.println(" срок годности букета " + flovers[3].getLifeSpam() + " дня");
+            System.out.println(" срок годности букета " + flovers[3].getLifeSpam() + " дней");
         }
 
     }
